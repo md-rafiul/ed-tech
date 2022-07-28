@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>IT Solutions</title>
+    <link rel="stylesheet" href="styles/style.css" />
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -63,65 +64,19 @@
         </nav>
       </div>
       <!-- carousel -->
-      <div class="container mt-3">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div
-              class="carousel-item active d-flex justify-content-center align-items-center text-center"
-            >
-              <div class="d-flex flex-column text-center position-absolute">
-                <h1>Get Started Digital Learning</h1>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-                <button class="btn btn-primary">Get Started</button>
-              </div>
-              <img
-                src="images/cover/cover-1.png"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/cover/cover-2.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/cover/cover-3.jpg"
-                class="d-block w-100 img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+      <!-- header text  -->
+      <div class="container mt-3 d-flex justify-content-center">
+        <div class="w-50 d-flex flex-column text-center align-items-center">
+          <h1>Get Started Digital Learning</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <button class="btn btn-primary">Get Started</button>
         </div>
       </div>
+      <!-- header text end -->
     </header>
     <main>
       <section id="join" class="my-5">
@@ -135,8 +90,57 @@
               </p>
             </div>
             <div class="d-flex justify-content-around align-items-center">
-              <div class="btn bg-white text-primary fw-bold py-2 px-3">
-                Join Now
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary bg-white text-primary fw-bold py-2 px-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Join now!
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Join us now!
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2 class="text-center">
+                        Sorry!! <br />
+                        Site is down for maintainace!!
+                      </h2>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Join
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
