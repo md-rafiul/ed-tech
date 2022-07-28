@@ -18,8 +18,8 @@
     ></script>
   </head>
   <body>
-    <header></header>
-    <main>
+    <header>
+      <!-- navbar  -->
       <div class="container">
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
@@ -62,19 +62,222 @@
           </div>
         </nav>
       </div>
+      <!-- carousel -->
+      <div class="container">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active d-flex justify-content-center align-items-center text-center"
+            >
+              <div class="d-flex flex-column text-center position-absolute">
+                <h1>Get Started Digital Learning</h1>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+              <img
+                src="images/cover/cover-1.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div
+              class="carousel-item d-flex justify-content-center align-items-center text-center"
+            >
+              <div class="d-flex flex-column text-center position-absolute">
+                <h1>Get Started Digital Learning</h1>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+              <img
+                src="images/cover/cover-2.jpg"
+                class="d-block w-100 img-fluid overflow-hidden"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/cover/cover-3.jpg"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        id="faq"
+        class="container d-flex flex-column justify-content-center text-center my-5 w-50"
+      >
+        <div class="mb-4">
+          <h2 class="fw-bolder">Frequently Asked Questions</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item g-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Difference flex and grid
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  The basic difference between CSS Grid Layout and CSS Flexbox
+                  Layout is that flexbox was designed for layout in one
+                  dimension - either a row or a column. Grid was designed for
+                  two-dimensional layout - rows, and columns at the same time.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Difference between bootstrap and tailwind
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Bootstrap comes with a set of pre-styled responsive,
+                  mobile-first components that possess a definite UI kit.
+                  Tailwind CSS uses a set of utility classes to create a neat UI
+                  with more flexibility and uniqueness. Sites created using
+                  Bootstrap follow the generic pattern that makes them look
+                  identical.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What is css box model?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  In CSS, the term "box model" is used when talking about design
+                  and layout. The CSS box model is essentially a box that wraps
+                  around every HTML element. It consists of: margins, borders,
+                  padding, and the actual content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  What is semantic tag in HTML?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  A semantic element clearly describes its meaning to both the
+                  browser and the developer. Examples of non-semantic elements:
+                  <strong>&lt;div&gt;</strong> and
+                  <strong>&lt;span&gt;</strong> - Tells nothing about its
+                  content. Examples of semantic elements:
+                  <strong>&lt;form&gt;</strong> ,
+                  <strong>&lt;table&gt;</strong> , and
+                  <strong>&lt;article&gt;</strong> - Clearly defines its
+                  content.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer
       id="footer"
-      class="h-auto bg-black p-5 text-white d-flex flex-column justify-content-center text-center"
+      class="h-auto bg-black p-5 text-white d-flex flex-column text-center"
     >
-      <h2 class="font-weight-bold">IT Solutions</h2>
+      <h2 class="font-weight-bold text-white">IT Solutions</h2>
       <p>Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman</p>
       <p class="d-flex justify-content-center text-center">
         <a class="nav-link" href="#">Privacy Policy </a>
         <span class="px-3"> | </span>
         <a class="nav-link" href="#"> Terms of use</a>
       </p>
-      <div class="d-flex justify-content-center text-center">
+      <div class="d-flex justify-content-center text-center fs-3">
         <a href="" class="nav-link"><i class="fa-brands fa-facebook p-2"></i></a
         ><a href="" class="nav-link"
           ><i class="fa-brands fa-linkedin p-2"></i></a
