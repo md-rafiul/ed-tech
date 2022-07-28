@@ -1,3 +1,12 @@
-.carousel-item img {
-  filter: brightness(50%);
+/* .carousel-item img {
+  filter: brightness(90%);
+} */
+
+#join-text {
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  #join-text {
+    width: 50%;
+  }
 }
